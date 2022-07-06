@@ -1,0 +1,23 @@
+{
+  "name": "strangerthingsapp",
+  "version": "1.0.0",
+  "description": "Stranger app",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HenriqueBeserra/StrangerThings.git"
+  },
+  "author": "Henrique Beserra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HenriqueBeserra/StrangerThings/issues"
+  },
+  "homepage": "https://github.com/HenriqueBeserra/StrangerThings#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
+  }
+}
