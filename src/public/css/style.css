@@ -4,8 +4,15 @@
     padding: 0;
 }
 
+@keyframes fade-in {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+}
+
 body {
     background-color: rgb(79, 0, 0);
+    opacity: 0;
+    animation: fade-in 2.4s normal forwards ease-in-out;
 }
 
 .header-page {
@@ -27,19 +34,23 @@ body {
     flex-direction: row;
     justify-content: center;
     color: rgb(179, 40, 40);
-    margin: 14px auto;
+    margin: 10px auto;
     font-weight: lighter;
 }
 
 .header-img > img{
-    width: 100%;
+    width: 99%;
+    height: 55em;
     margin: 0 auto;
     border-bottom: 1.2px solid red;
+    box-shadow: -2px 0 8px red, 2px 0  8px red;
+    opacity: 0;
+    animation: fade-in 2.2s normal forwards ease-in-out;
 }
 
 .main-description {
     width: 1200px;
-    margin: 8% auto;
+    margin: 10% auto;
 }
 
 .main-description > h1 {
@@ -51,7 +62,68 @@ body {
     border-bottom: 0.2px solid rgba(255, 255, 255, 0.573);
 }
 
-.main-description > .main-img {
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    margin-bottom: 10%;
+}
+
+.main-content > .main-img {
     width: 30em;
     box-shadow: 0.5px -3px 6px rgba(62, 12, 190, 0.764), 0.5px 5px 12px rgb(3, 31, 241);
+    opacity: 0;
+    animation: fade-in 2s normal forwards ease-in-out;
+}
+  
+
+
+.main-content > p {
+    font-size: 1.4em;
+    color: white;
+    text-align: justify;
+}
+
+.main-personagens > h1 {
+    color: #ffffff;
+    font-size: 1.8em;
+    font-weight: lighter;
+    margin-bottom: 5%;
+}
+
+.main-personagens > img {
+    border: 1px solid blueviolet;
+    margin-bottom: 5%;
+}
+
+.main-container-one, .main-container-two, .main-container-three{
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto;
+    gap:4%;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content-personagens {
+    width: 42em;
+    margin: 1.5% auto;
+    border-radius: 10px;
+}
+
+.main-content-personagens > h4 {
+    position: relative;
+    top: -32px;
+    left: 10px;
+    color: #ffffff;
+    font-size: 1.6em;
+    font-weight: lighter;
+}
+
+.icon > img {
+    width: 100%;
+    height: 12em;
+    border-radius: 10px;
+    opacity: 0.8;
 }
