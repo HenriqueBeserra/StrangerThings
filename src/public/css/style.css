@@ -43,7 +43,7 @@ body {
     height: 55em;
     margin: 0 auto;
     border-bottom: 1.2px solid red;
-    box-shadow: -2px 0 8px red, 2px 0  8px red;
+    box-shadow: -2px 4px 5px red, 2px 4px  8px red;
     opacity: 0;
     animation: fade-in 2.2s normal forwards ease-in-out;
 }
@@ -122,8 +122,34 @@ body {
 }
 
 .icon > img {
-    width: 100%;
-    height: 12em;
+    width: 90%;
+    height: 12.5em;
     border-radius: 10px;
     opacity: 0.8;
+    border: 0.8px solid red;
 }
+
+.main-content-personagens .personagens-resumo > p {
+    position: relative;
+    top: -200px;
+    margin-bottom: -100px;
+    left: 3%;
+    text-align: justify;
+    width: 80%;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.main-content-personagens:hover .icon {
+    opacity: 0.2;
+    transition: 1s;
+}
+
+.main-content-personagens:hover .personagens-resumo > p {
+    transform: translateY(-16px);
+    opacity: 1;
+    transition: 0.8s;
+    color: #ffffff;
+}
+  
